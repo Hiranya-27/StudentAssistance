@@ -1,0 +1,125 @@
+.bo {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+    background-size: cover; display: flex;
+    
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background: url('https://i.pinimg.com/564x/7a/0c/0c/7a0c0c0fab4a22570b6272f3b848a604.jpg') center/cover;
+    max-width: 9000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(223, 17, 17, 0.7); /* Adjust the alpha channel for transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container form {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.form-row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    /* Additional styles for smaller screens */
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 400px;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 10px;
+  justify-content: space-around;
+    color:olivedrab;
+    background-color: antiquewhite;
+    font-weight: bolder;
+}
+
+.container select {
+    width: 65%;
+    padding: 1rem;
+    border: 5px solid #ccc;
+    border-radius: 6px;
+    background: transparent;
+}
+.container input,textarea{
+    width: 60%;
+    padding: 1rem;
+    border: 5px solid #ccc;
+    border-radius: 6px;
+    background: transparent;
+}
+
+.container button {
+    background-color: #15741b;
+    color: white;
+    padding: 1rem;
+    border: none;
+    margin-left: 580px;
+    width: 20%;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container button:hover {
+    background-color: #45a049;
+}
+/* Add this to your UserApply.css or create a new CSS file */
+.radio-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+  }
+  
+  .radio-buttons-container label {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .radio-buttons-container input {
+    margin-right: 5px;
+  }
+  
+  /* Rest of your existing CSS styles */
+  
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 901px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.pay{
+    margin-right: 400px;
+}
